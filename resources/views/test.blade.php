@@ -84,7 +84,11 @@
 
         <div class="content">
             <div class="title m-b-md">
-                Curso Laravel en Platzi
+                @isset($title)
+                {{ $title }}
+                @else
+                {{ 'No hay titulo '}}
+                @endisset
             </div>
 
             <div class="links">
